@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/7up1.png" alt="slider-img"></div>
+                  <div class="swiper-slide"><img src="img/7up2.png" alt="slider-img"></div>
+                  <div class="swiper-slide"><img src="img/7up3.png" alt="slider-img"></div>
+                  <div class="swiper-slide"><img src="img/7up4.png" alt="slider-img"></div>
+                  <div class="swiper-slide"><img src="img/7up2.png" alt="slider-img"></div>
+                  <div class="swiper-slide"><img src="img/7up4.png" alt="slider-img"></div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 0,
+            modifier: 1,
+            slideShadows: true,
+          },
+          loop: true,
+        });
+      </script>
+
+
+
+</body>
+</html>
